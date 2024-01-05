@@ -176,5 +176,4 @@ described in the __Methods__ and __Properties__ sections above.
 
 ---
 # Compatibility
-The ___ClassPropertyParser___ class library was developed using ___C# 10.0___ and ___.NET 6.0___ for the ___Windows___ desktop targeting
-___Windows 7___ and above.
+The ___ClassPropertyParser___ class library was developed using ___C# 10.0___ and ___.NET 6.0___ and should be usable in any project that supports those versions.
