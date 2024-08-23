@@ -15,10 +15,10 @@
         /// <include file="docs.xml" path="docs/members[@name=&quot;classpropertyparser&quot;]/Constructor1/*"/>
         public ClassPropertyParser()
         {
-            _classTypes = new();
-            _collectionProperties = new();
-            _complexProperties = new();
-            _simpleProperties = new();
+            _classTypes = [];
+            _collectionProperties = [];
+            _complexProperties = [];
+            _simpleProperties = [];
         }
 
         /// <include file="docs.xml" path="docs/members[@name=&quot;classpropertyparser&quot;]/Constructor2/*"/>

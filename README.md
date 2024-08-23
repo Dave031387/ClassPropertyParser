@@ -173,7 +173,3 @@ string fullTypeName = ClassPropertyParser.GetTypeName(typeof(Models.Person));
 ## ___IClassPropertyParser___ Interface
 The ___IClassPropertyParser___ interface defines all of the methods and properties (with the exception of the ___GetTypeName___ static property)
 described in the __Methods__ and __Properties__ sections above.
-
----
-# Compatibility
-The ___ClassPropertyParser___ class library was developed using ___C# 10.0___ and ___.NET 6.0___ and should be usable in any project that supports those versions.

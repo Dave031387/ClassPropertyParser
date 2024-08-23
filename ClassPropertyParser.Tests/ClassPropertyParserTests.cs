@@ -314,14 +314,14 @@ namespace ClassPropertyParser
 
         private static void VerifyClassTypeList(IClassPropertyParser parser)
         {
-            List<Type> expectedTypes = new()
-            {
+            List<Type> expectedTypes =
+            [
                 typeof(TestModel1),
                 typeof(TestModel2),
                 typeof(TestModel3),
                 typeof(TestModel4),
                 typeof(TestModel5)
-            };
+            ];
 
             parser.ClassTypes
                 .Should()
@@ -422,13 +422,13 @@ namespace ClassPropertyParser
 
             if (propertyType is PropertyType.All or PropertyType.Simple)
             {
-                List<string> expectedProperties = new()
-                {
+                List<string> expectedProperties =
+                [
                     nameof(TestModel1.TM1Property1),
                     nameof(TestModel1.TM1Property2),
                     nameof(TestModel1.TM1Property3),
                     nameof(TestModel1.TM1Property4)
-                };
+                ];
                 VerifyPropertyList(PropertyType.Simple, expectedProperties, parser);
             }
         }
@@ -437,31 +437,31 @@ namespace ClassPropertyParser
         {
             if (propertyType is PropertyType.All or PropertyType.Collection)
             {
-                List<string> expectedProperties = new()
-                {
+                List<string> expectedProperties =
+                [
                     nameof(TestModel5.TM5Property2),
                     nameof(TestModel5.TM5Property5)
-                };
+                ];
                 VerifyPropertyList(PropertyType.Collection, expectedProperties, parser);
             }
 
             if (propertyType is PropertyType.All or PropertyType.Complex)
             {
-                List<string> expectedProperties = new()
-                {
+                List<string> expectedProperties =
+                [
                     nameof(TestModel5.TM5Property4),
                     nameof(TestModel5.TM5Property6)
-                };
+                ];
                 VerifyPropertyList(PropertyType.Complex, expectedProperties, parser);
             }
 
             if (propertyType is PropertyType.All or PropertyType.Simple)
             {
-                List<string> expectedProperties = new()
-                {
+                List<string> expectedProperties =
+                [
                     nameof(TestModel5.TM5Property1),
                     nameof(TestModel5.TM5Property3)
-                };
+                ];
                 VerifyPropertyList(PropertyType.Simple, expectedProperties, parser);
             }
         }
